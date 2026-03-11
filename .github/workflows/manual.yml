@@ -1,0 +1,9 @@
+name: Mensaje automatico
+
+on: push
+
+jobs:
+  mensaje:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Se ha subido un cambio al repositorio"
