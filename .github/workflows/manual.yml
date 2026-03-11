@@ -1,10 +1,9 @@
-name: Workflow Manual
+name: Mensaje automatico
 
-on:
-  workflow_dispatch:
+on: push
 
 jobs:
-  run:
+  mensaje:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Workflow ejecutado manualmente"
+      - run: echo "Se ha subido un cambio al repositorio"
